@@ -1,10 +1,9 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
+
 
 const AboutPage = () => (
     <React.Fragment>
-        <Header />
+        
         <div>
             <h1>Corbin Jensen</h1>
             <p>Bio ipsum</p>
@@ -23,7 +22,7 @@ const AboutPage = () => (
                 <li></li>
             </ul>
         </div>
-        <Footer />
+
     </React.Fragment>
 )
 

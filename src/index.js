@@ -10,16 +10,30 @@ import App from './App';
 import AboutPage from './pages/AboutPage';
 import BlogPage from './pages/BlogPage';
 import ProjectsPage from './pages/ProjectsPage';
+import BlogPost from './pages/BlogPost';
+import HomePage from './pages/HomePage';
 import reportWebVitals from './reportWebVitals';
 
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}/>
-      <Route path="/about" element={<AboutPage/>}/>
-      <Route path="/blog" element={<BlogPage />}/>
-      <Route path="/work" element={<ProjectsPage />}/>
+      <Route path="/" element={<App />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage/>}/>
+        <Route path="/blog" element={<BlogPage />}>
+          <Route path=":name" element={<BlogPost />}/>
+        </Route>
+        <Route path="/work" element={<ProjectsPage />}/>
+        <Route
+          path="*"
+          element={
+            <main>
+              <p>404 Page Not Found</p>
+            </main>
+          }
+        />
+      </Route>
     </Routes>
   </BrowserRouter>,
   rootElement
