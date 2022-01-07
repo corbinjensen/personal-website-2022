@@ -1,10 +1,10 @@
 import React from 'react';
 
 const ProjectCasePage = () => (
-    <>
-        <h1>ProjectCase Page</h1>
-    </>
-    
+    <React.Fragment>
+        <h1>Hello, Welcome to Blog</h1>
+        <p>Lorem ipsum</p>
+    </React.Fragment>
 )
 
 export default ProjectCasePage;

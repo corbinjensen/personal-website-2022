@@ -1,8 +1,10 @@
 import React from 'react';
+import Header from '../components/Header';
 
 const ProjectsPage = () => (
     <React.Fragment>
-        <h1>Projects</h1>
+        <Header />
+        <h1>Work</h1>
         <p>Lorem ipsum</p>
     </React.Fragment>
 )
