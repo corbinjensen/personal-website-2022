@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Corbin Jensen - Portfolio website with blog
+
+Created January 2022 by Corbin Jensen using Node JS, React, and React Router. 
+
+## React Router Version 6 Notes
+https://reactrouter.com/docs/en/v6/getting-started/tutorial
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
