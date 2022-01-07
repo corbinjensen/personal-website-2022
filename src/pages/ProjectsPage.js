@@ -1,9 +1,10 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 
 const ProjectsPage = () => (
     <React.Fragment>
         <h1>Work</h1>
-        <p>Lorem ipsum</p>
+        <Outlet />
     </React.Fragment>
 )
 

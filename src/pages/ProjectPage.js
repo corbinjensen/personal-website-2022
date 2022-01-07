@@ -1,15 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-const BlogPost = () => {
+const ProjectPage = () => {
 
     let params = useParams();
     return (
         <React.Fragment>
-            <h2>{params.name}</h2>
+            <h2>{params.project}</h2>
             <p>Lorem ipsum</p>
         </React.Fragment>
     )
+
 }
 
-export default BlogPost;
+export default ProjectPage;
