@@ -1,10 +1,12 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import BlogFeed from '../components/BlogFeed';
+import articleContent from './article-content';
+
 
 const BlogPage = () => (
     <React.Fragment>
         <h1>Blog</h1>
-        <Outlet />
+        <BlogFeed articles={articleContent} />
     </React.Fragment>
 )
 

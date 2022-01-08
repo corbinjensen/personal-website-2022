@@ -22,12 +22,10 @@ render(
       <Route path="/" element={<App />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage/>}/>
-        <Route path="/blog" element={<BlogPage />}>
-          <Route path=":name" element={<BlogPost />}/>
-        </Route>
-        <Route path="/work" element={<ProjectsPage />}>
-          <Route path=":project" element={<ProjectPage />} />
-        </Route>
+        <Route path="/blog" element={<BlogPage />}/>
+        <Route path="/blog/:name" element={<BlogPost />}/>
+        <Route path="/work" element={<ProjectsPage />}/>
+        <Route path="/work/:project" element={<ProjectPage />} />
         <Route
           path="*"
           element={

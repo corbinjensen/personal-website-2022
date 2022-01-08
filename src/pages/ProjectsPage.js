@@ -1,10 +1,11 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import ProjectsFeed from '../components/ProjectsFeed';
+import projectContent from './projects-content';
 
 const ProjectsPage = () => (
     <React.Fragment>
         <h1>Work</h1>
-        <Outlet />
+        <ProjectsFeed projects={projectContent}/>
     </React.Fragment>
 )
 
