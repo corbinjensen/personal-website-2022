@@ -14,6 +14,7 @@ import BlogPost from './pages/BlogPost';
 import HomePage from './pages/HomePage';
 import reportWebVitals from './reportWebVitals';
 import ProjectPage from './pages/ProjectPage';
+import LoginPage from './pages/LoginPage';
 
 const rootElement = document.getElementById("root");
 render(
@@ -26,6 +27,7 @@ render(
         <Route path="/blog/:name" element={<BlogPost />}/>
         <Route path="/work" element={<ProjectsPage />}/>
         <Route path="/work/:project" element={<ProjectPage />} />
+        <Route path="/login" element={<LoginPage />} />
         <Route
           path="*"
           element={
