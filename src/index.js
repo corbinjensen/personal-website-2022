@@ -15,6 +15,7 @@ import HomePage from './pages/HomePage';
 import reportWebVitals from './reportWebVitals';
 import ProjectPage from './pages/ProjectPage';
 import LoginPage from './pages/LoginPage';
+import EditBlogPage from './protected-pages/EditBlogPage';
 
 const rootElement = document.getElementById("root");
 render(
@@ -28,6 +29,7 @@ render(
         <Route path="/work" element={<ProjectsPage />}/>
         <Route path="/work/:project" element={<ProjectPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/edit" element={<EditBlogPage />} />
         <Route
           path="*"
           element={
